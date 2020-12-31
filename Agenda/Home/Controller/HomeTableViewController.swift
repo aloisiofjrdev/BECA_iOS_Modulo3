@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class HomeTableViewController: UITableViewController, UISearchBarDelegate {
+class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFetchedResultsControllerDelegate {
     
     //MARK: - Variáveis
     
@@ -27,6 +27,7 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate {
         super.viewDidLoad()
         self.configuraSearch()
         self.recuperaAluno()
+        self.gerenciadorDeResultados?.delegate = self
     }
     
     // MARK: - Métodos
@@ -63,10 +64,8 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate {
         let celula = tableView.dequeueReusableCell(withIdentifier: "celula-aluno", for: indexPath) as! HomeTableViewCell
         
         guard let aluno = gerenciadorDeResultados?.fetchedObjects![indexPath.row] else { return celula}
-        celula.labelNomeDoAluno.text = aluno.nome
-        if let imagemDoAluno = aluno.foto as? UIImage{
-            celula.imageAluno.image = imagemDoAluno
-        }
+        celula.configuraCelula(aluno)
+        
         return celula
     }
     
@@ -81,6 +80,18 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate {
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
+    }
+    
+    // MARK: - FetchedResultsControllerDelegate
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        switch type {
+        case .delete:
+            //implementar
+            break
+        default:
+            tableView.reloadData()
+        }
     }
 
 }
