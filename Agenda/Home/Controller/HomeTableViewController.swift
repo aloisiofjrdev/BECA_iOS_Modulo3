@@ -21,7 +21,7 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
     let searchController = UISearchController(searchResultsController: nil)
     var gerenciadorDeResultados : NSFetchedResultsController<Aluno>?
     var alunoViewController: AlunoViewController?
-    var mensagem: Mensagem()
+    var mensagem = Mensagem()
     
     // MARK: - View Lifecycle
 
