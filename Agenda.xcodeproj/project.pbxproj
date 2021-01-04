@@ -21,6 +21,7 @@
 		D380A47725A33DE50023A3C5 /* Localizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380A47625A33DE50023A3C5 /* Localizacao.swift */; };
 		D380A47B25A344C70023A3C5 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380A47A25A344C70023A3C5 /* MapaViewController.swift */; };
 		D380A47E25A34DA20023A3C5 /* CalculaMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380A47D25A34DA20023A3C5 /* CalculaMediaAPI.swift */; };
+		D380A48025A35A1F0023A3C5 /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380A47F25A35A1F0023A3C5 /* Notificacoes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D380A47625A33DE50023A3C5 /* Localizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizacao.swift; sourceTree = "<group>"; };
 		D380A47A25A344C70023A3C5 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		D380A47D25A34DA20023A3C5 /* CalculaMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaMediaAPI.swift; sourceTree = "<group>"; };
+		D380A47F25A35A1F0023A3C5 /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				D380A472259E41B20023A3C5 /* MenuOpcoesAlunos.swift */,
 				D380A474259E71430023A3C5 /* Mensagem.swift */,
 				D380A47625A33DE50023A3C5 /* Localizacao.swift */,
+				D380A47F25A35A1F0023A3C5 /* Notificacoes.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				03AA17681FC843B1003CB2B8 /* HomeTableViewCell.swift in Sources */,
 				D380A473259E41B20023A3C5 /* MenuOpcoesAlunos.swift in Sources */,
 				D380A475259E71430023A3C5 /* Mensagem.swift in Sources */,
+				D380A48025A35A1F0023A3C5 /* Notificacoes.swift in Sources */,
 				D380A47B25A344C70023A3C5 /* MapaViewController.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 				D380A47725A33DE50023A3C5 /* Localizacao.swift in Sources */,
