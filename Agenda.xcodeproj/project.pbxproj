@@ -23,6 +23,8 @@
 		D380A47E25A34DA20023A3C5 /* CalculaMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380A47D25A34DA20023A3C5 /* CalculaMediaAPI.swift */; };
 		D380A48025A35A1F0023A3C5 /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380A47F25A35A1F0023A3C5 /* Notificacoes.swift */; };
 		D380A48225A35DE60023A3C5 /* AutenticacaoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380A48125A35DE60023A3C5 /* AutenticacaoLocal.swift */; };
+		D380A48525A48CD50023A3C5 /* Pino.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380A48425A48CD50023A3C5 /* Pino.swift */; };
+		D380A48825A48F820023A3C5 /* icon_caelum.png in Resources */ = {isa = PBXBuildFile; fileRef = D380A48725A48F820023A3C5 /* icon_caelum.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		D380A47D25A34DA20023A3C5 /* CalculaMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaMediaAPI.swift; sourceTree = "<group>"; };
 		D380A47F25A35A1F0023A3C5 /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
 		D380A48125A35DE60023A3C5 /* AutenticacaoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoLocal.swift; sourceTree = "<group>"; };
+		D380A48425A48CD50023A3C5 /* Pino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pino.swift; sourceTree = "<group>"; };
+		D380A48725A48F820023A3C5 /* icon_caelum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_caelum.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				03AA17691FC84A2D003CB2B8 /* Alunos */,
 				D380A47825A344840023A3C5 /* Mapa */,
 				D380A46F259D03D30023A3C5 /* Componentes */,
+				D380A48625A48F820023A3C5 /* Assets */,
 				03AA17511FC84154003CB2B8 /* Main.storyboard */,
 				03AA17571FC84154003CB2B8 /* Assets.xcassets */,
 				03AA17591FC84154003CB2B8 /* LaunchScreen.storyboard */,
@@ -148,6 +153,7 @@
 		D380A47825A344840023A3C5 /* Mapa */ = {
 			isa = PBXGroup;
 			children = (
+				D380A48325A48CC60023A3C5 /* Model */,
 				D380A47925A344A10023A3C5 /* Controller */,
 			);
 			path = Mapa;
@@ -167,6 +173,22 @@
 				D380A47D25A34DA20023A3C5 /* CalculaMediaAPI.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D380A48325A48CC60023A3C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D380A48425A48CD50023A3C5 /* Pino.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D380A48625A48F820023A3C5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D380A48725A48F820023A3C5 /* icon_caelum.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AA175B1FC84154003CB2B8 /* LaunchScreen.storyboard in Resources */,
+				D380A48825A48F820023A3C5 /* icon_caelum.png in Resources */,
 				03AA17581FC84154003CB2B8 /* Assets.xcassets in Resources */,
 				03AA17531FC84154003CB2B8 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
+				D380A48525A48CD50023A3C5 /* Pino.swift in Sources */,
 				03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */,
 				03AA17561FC84154003CB2B8 /* Agenda.xcdatamodeld in Sources */,
 				D380A471259D03FD0023A3C5 /* ImagePicker.swift in Sources */,
